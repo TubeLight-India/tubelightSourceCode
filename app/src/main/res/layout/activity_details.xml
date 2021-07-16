@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/details_back"
+    tools:context=".details">
+
+
+    <ImageView
+        android:id="@+id/go"
+        android:layout_width="297dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/signup"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/go"
+        app:layout_constraintEnd_toEndOf="@+id/go"
+        app:layout_constraintStart_toStartOf="@+id/go"
+        app:layout_constraintTop_toTopOf="@+id/go" />
+
+    <ImageView
+        android:id="@+id/imageView_mail"
+        android:layout_width="297dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/num_textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dash_boad" />
+
+    <ImageView
+        android:id="@+id/imageView_name"
+        android:layout_width="297dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_byke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dash_boad" />
+
+    <ImageView
+        android:id="@+id/imageView_number"
+        android:layout_width="297dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_blood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dash_boad" />
+
+    <ImageView
+        android:id="@+id/imageView_byke"
+        android:layout_width="297dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dash_boad" />
+
+    <ImageView
+        android:id="@+id/imageView_address"
+        android:layout_width="297dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dash_boad" />
+
+    <ImageView
+        android:id="@+id/imageView_blood"
+        android:layout_width="297dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/go"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dash_boad" />
+
+    <TextView
+        android:id="@+id/name_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_name"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_name"
+        app:layout_constraintStart_toStartOf="@+id/imageView_name"
+        app:layout_constraintTop_toTopOf="@+id/imageView_name" />
+
+    <TextView
+        android:id="@+id/refferal_textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Referral ID"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_blood"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_blood"
+        app:layout_constraintStart_toStartOf="@+id/imageView_blood"
+        app:layout_constraintTop_toTopOf="@+id/imageView_blood" />
+
+    <TextView
+        android:id="@+id/add_textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_address"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_address"
+        app:layout_constraintStart_toStartOf="@+id/imageView_address"
+        app:layout_constraintTop_toTopOf="@+id/imageView_address" />
+
+    <TextView
+        android:id="@+id/gmail_textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gmail"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_mail"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_mail"
+        app:layout_constraintStart_toStartOf="@+id/imageView_mail"
+        app:layout_constraintTop_toTopOf="@+id/imageView_mail" />
+
+    <TextView
+        android:id="@+id/num_textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_number"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_number"
+        app:layout_constraintStart_toStartOf="@+id/imageView_number"
+        app:layout_constraintTop_toTopOf="@+id/imageView_number" />
+
+    <TextView
+        android:id="@+id/age_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DOB(DD/MM/YYYY)"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_byke"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_byke"
+        app:layout_constraintStart_toStartOf="@+id/imageView_byke"
+        app:layout_constraintTop_toTopOf="@+id/imageView_byke" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="205dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_mail"
+        app:layout_constraintStart_toStartOf="@+id/imageView_mail"
+        app:layout_constraintTop_toTopOf="@+id/imageView_mail"
+        tools:visibility="gone" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="205dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_name"
+        app:layout_constraintStart_toStartOf="@+id/imageView_name"
+        app:layout_constraintTop_toTopOf="@+id/imageView_name" />
+
+    <EditText
+        android:id="@+id/designation"
+        android:layout_width="205dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_byke"
+        app:layout_constraintStart_toStartOf="@+id/imageView_byke"
+        app:layout_constraintTop_toTopOf="@+id/imageView_byke" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="205dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_address"
+        app:layout_constraintStart_toStartOf="@+id/imageView_address"
+        app:layout_constraintTop_toTopOf="@+id/imageView_address" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="205dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_number"
+        app:layout_constraintStart_toStartOf="@+id/imageView_number"
+        app:layout_constraintTop_toTopOf="@+id/imageView_number" />
+
+    <EditText
+        android:id="@+id/blood_group"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_blood"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_blood"
+        app:layout_constraintStart_toStartOf="@+id/imageView_blood"
+        app:layout_constraintTop_toTopOf="@+id/imageView_blood"
+        tools:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

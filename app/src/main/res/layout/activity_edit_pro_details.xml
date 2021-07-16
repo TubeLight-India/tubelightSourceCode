@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editProDetails">
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="409dp"
+        android:layout_height="91.62dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/yellow_sexy_one" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:text="Edit Profile"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+        app:layout_constraintStart_toEndOf="@+id/back_edit"
+        app:layout_constraintTop_toTopOf="@+id/imageView18" />
+
+
+
+    <ImageView
+        android:id="@+id/back_edit"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+        app:layout_constraintStart_toStartOf="@+id/imageView18"
+        app:layout_constraintTop_toTopOf="@+id/imageView18"
+        app:srcCompat="@drawable/arrow_left" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView24"
+                    android:layout_width="152dp"
+                    android:layout_height="152dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/dum" />
+
+                <TextView
+                    android:id="@+id/disp_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Akash Jain"
+                    android:textColor="#424242"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView24" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView26"
+                    android:layout_width="288dp"
+                    android:layout_height="854dp"
+                    android:layout_marginTop="40dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/back_change_per" />
+
+                <EditText
+                    android:id="@+id/f_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="120dp"
+                    android:backgroundTint="#ADABAB"
+                    android:ems="10"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:textColor="#ADABAB"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/l_name"
+                    app:layout_constraintTop_toTopOf="@+id/imageView26" />
+
+                <EditText
+                    android:id="@+id/l_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="#ADABAB"
+                    android:ems="10"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName"
+                    android:textColor="#ADABAB"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/u_age"
+                    app:layout_constraintTop_toBottomOf="@+id/f_name" />
+
+                <EditText
+                    android:id="@+id/u_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="#ADABAB"
+                    android:ems="10"
+                    android:hint="DOB(DD/MM/YYYY)"
+                    android:inputType="textPersonName"
+                    android:textColor="#ADABAB"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/imageView26"
+                    app:layout_constraintTop_toBottomOf="@+id/l_name" />
+
+                <EditText
+                    android:id="@+id/u_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="#ADABAB"
+                    android:ems="10"
+                    android:hint="Number"
+                    android:inputType="textPersonName"
+                    android:textColor="#ADABAB"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/u_age"
+                    app:layout_constraintTop_toBottomOf="@+id/u_age" />
+
+                <EditText
+                    android:id="@+id/u_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="#ADABAB"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="#ADABAB"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/u_num"
+                    app:layout_constraintTop_toBottomOf="@+id/u_num" />
+
+
+                <EditText
+                    android:id="@+id/u_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="#ADABAB"
+                    android:ems="10"
+                    android:hint="Address"
+                    android:inputType="textPersonName"
+                    android:textColor="#ADABAB"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/u_email"
+                    app:layout_constraintTop_toBottomOf="@+id/u_email" />
+
+                <EditText
+                    android:id="@+id/u_pincode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="#ADABAB"
+                    android:ems="10"
+                    android:hint="Pincode"
+                    android:inputType="textPersonName"
+                    android:textColor="#ADABAB"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/u_address"
+                    app:layout_constraintTop_toBottomOf="@+id/u_address" />
+
+                <EditText
+                    android:id="@+id/u_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="#ADABAB"
+                    android:ems="10"
+                    android:hint="State"
+                    android:inputType="textPersonName"
+                    android:textColor="#ADABAB"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/u_pincode"
+                    app:layout_constraintTop_toBottomOf="@+id/u_pincode" />
+
+                <EditText
+                    android:id="@+id/u_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="#ADABAB"
+                    android:ems="10"
+                    android:hint="Gender"
+                    android:inputType="textPersonName"
+                    android:textColor="#ADABAB"
+                    android:textColorHint="#ADABAB"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/u_state"
+                    app:layout_constraintTop_toBottomOf="@+id/u_state" />
+
+
+                <EditText
+                    android:id="@+id/u_district"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="#ADABAB"
+                    android:ems="10"
+                    android:hint="District"
+                    android:inputType="textPersonName"
+                    android:textColor="#ADABAB"
+                    android:textColorHint="#ADABAB"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/u_gender"
+                    app:layout_constraintTop_toBottomOf="@+id/u_gender" />
+
+
+                <EditText
+                    android:id="@+id/u_nomini"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="#ADABAB"
+                    android:ems="10"
+                    android:hint="Nominee Name"
+                    android:inputType="textPersonName"
+                    android:textColor="#ADABAB"
+                    android:textColorHint="#ADABAB"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/u_district"
+                    app:layout_constraintTop_toBottomOf="@+id/u_district" />
+
+                <EditText
+                    android:id="@+id/u_relation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="#ADABAB"
+                    android:ems="10"
+                    android:hint="Relation"
+                    android:inputType="textPersonName"
+                    android:textColor="#ADABAB"
+                    android:textColorHint="#ADABAB"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/u_nomini"
+                    app:layout_constraintTop_toBottomOf="@+id/u_nomini" />
+
+                <ImageView
+                    android:id="@+id/update_image"
+                    android:layout_width="127.98dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="30dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView26"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/update_details" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

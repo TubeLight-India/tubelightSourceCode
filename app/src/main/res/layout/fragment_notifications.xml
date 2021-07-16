@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+
+            <ImageView
+                android:id="@+id/order_his_tory"
+                android:layout_width="260dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/y_yel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+            <ImageView
+                android:id="@+id/edit_profile"
+                android:layout_width="260dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/y_yel"
+                app:layout_constraintEnd_toEndOf="@+id/order_his_tory"
+                app:layout_constraintStart_toStartOf="@+id/order_his_tory"
+                app:layout_constraintTop_toBottomOf="@+id/order_his_tory" />
+
+            <ImageView
+                android:id="@+id/kyc_image"
+                android:layout_width="260dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/y_yel"
+                app:layout_constraintEnd_toEndOf="@+id/edit_profile"
+                app:layout_constraintStart_toStartOf="@+id/edit_profile"
+                app:layout_constraintTop_toBottomOf="@+id/edit_profile" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="152dp"
+                android:layout_height="152dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/dum"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="KYC"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@+id/kyc_image"
+                app:layout_constraintEnd_toEndOf="@+id/kyc_image"
+                app:layout_constraintStart_toStartOf="@+id/kyc_image"
+                app:layout_constraintTop_toTopOf="@+id/kyc_image" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Edit Profile"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@+id/edit_profile"
+                app:layout_constraintEnd_toEndOf="@+id/edit_profile"
+                app:layout_constraintStart_toStartOf="@+id/edit_profile"
+                app:layout_constraintTop_toTopOf="@+id/edit_profile" />
+
+            <ImageView
+                android:id="@+id/helppage"
+                android:layout_width="260dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/y_yel"
+                app:layout_constraintEnd_toEndOf="@+id/kyc_image"
+                app:layout_constraintStart_toStartOf="@+id/kyc_image"
+                app:layout_constraintTop_toBottomOf="@+id/kyc_image" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Help"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@+id/helppage"
+                app:layout_constraintEnd_toEndOf="@+id/helppage"
+                app:layout_constraintStart_toStartOf="@+id/helppage"
+                app:layout_constraintTop_toTopOf="@+id/helppage" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Order History"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@+id/order_his_tory"
+                app:layout_constraintEnd_toEndOf="@+id/order_his_tory"
+                app:layout_constraintStart_toStartOf="@+id/order_his_tory"
+                app:layout_constraintTop_toTopOf="@+id/order_his_tory" />
+
+            <ImageView
+                android:id="@+id/green"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="#34C514"
+                app:layout_constraintBottom_toBottomOf="@+id/kyc_image"
+                app:layout_constraintEnd_toEndOf="@+id/kyc_image"
+                app:layout_constraintTop_toTopOf="@+id/kyc_image" />
+
+            <ImageView
+                android:id="@+id/red"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="#D31919"
+                app:layout_constraintBottom_toBottomOf="@+id/kyc_image"
+                app:layout_constraintEnd_toEndOf="@+id/kyc_image"
+                app:layout_constraintTop_toTopOf="@+id/kyc_image" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
