@@ -44,6 +44,7 @@ public class rozarPay extends AppCompatActivity  implements PaymentResultListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rozar_pay);
 
+
         Checkout.preload(getApplicationContext());
         pay=findViewById(R.id.now_purchase);
         payText=findViewById(R.id.price_check_paid);
